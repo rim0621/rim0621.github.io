@@ -267,8 +267,8 @@
                         <div> 아마존 리뷰 텍스트 파일을 json파일로 불러들여서 상품번호(asin),리뷰(reviewText) 그리고 사용자들의 평가 횟루를 나타내는 helpful의 분모를 추출한다.
                           helpful의 분자는 긍정적인 리뷰평을 한 구매자의 수를 나타내고, 분모는 리뷰평에 참여한 구매자의 수를 나타낸다.
                           Map의 context.write에서 key값은 “asin”을 사용하고 value값은 “helpful”의 분모와 “reviewText”를 세미콜론(;)을 경계로 합친 Text형식으로 Reduce로 보낸다. </div>
-                        <img class="project2" src="assets/project2/reduce.png" width="450" height="400" alt=""  />
                         <li>REDUCE</li>
+                        <img class="project2" src="assets/project2/reduce.png" width="450" height="400" alt=""  />
                         <div>Map으로부터 key(“asin”)와 value(“helpful” + “reviewText”)를 받는다. 이때 value를 “helpful”과 “reviewText”를 세미콜론(;)을 경계로 split을 사용하여 구분한다. Text형식인 “helpful”을 Integer형으로 변환하여 같은 key(“asin”)중에 최대값을 추출하고 그 key(“asin”)의 대한 “reviewText”를 출력한다.</div>
 
                         </ul>
