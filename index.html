@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>나는 오늘도 발전하고 있다.</title>
+<title>1만 더하자</title>
 <!-- Meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -83,7 +83,7 @@
     <section class="section summary-section">
 	<h2 class="section-title"><i class="fa fa-user"></i>소개</h2>
 	<div class="summary">
-	    <p>안녕하세요. 저는 국민대 컴퓨터 공학에 재학 중인 임중현 입니다.</p>
+	    <p>안녕하세요. 저는 국민대 컴퓨터 공학에 재학 중인 임중현 입니다. </p>
 	</div><!--//summary-->
     </section><!--//section-->
     <!--경력-->
@@ -129,9 +129,9 @@
         </div>
       </div>
         <div class="panel panel-default">
-          <div class="panel-heading">개발과정</div>
+          <div class="panel-heading">사진</div>
           <div class="panel-body">
-            <li>add</li>
+            <li>수정중</li>
           </div>
         </div>
        </div>
@@ -147,7 +147,7 @@
 	    <div class="meta">
 		<div class="upper-row">
 		    <h3 class="job-title">Internship</h3>
-		    <div class="time">2017.12 ~ 2017.02</div>
+		    <div class="time">2016.12 ~ 2017.02</div>
 		</div><!--//upper-row-->
 		<div class="company">(주)핸즈온테크놀러지, 용산</div>
 	    </div><!--//meta-->
@@ -176,6 +176,78 @@
     <section class="section projects-section">
 
 	<h2 class="section-title"><i class="fa fa-archive"></i>프로젝트  <small>※제목을 클릭하면 상세설명을 보실 수 있습니다.</small></h2>
+
+
+       <div class="item">
+          <span class="project-title">
+        <a class="anchor" data-toggle="modal" data-target="#projectModal4" style="cursor:pointer"><strong>Jobs(수정중)</strong></a>
+      </span> - <span class="project-tagline">파이썬 API를 이용한 웹 크롤링 & 셀리늄</span>
+          <div id="projectModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">
+                    <span class="glyphicon glyphicon-level-up">&nbsp;Jobs</span>
+                  </h4>
+                </div>
+                <div class="modal-body">
+            <div class="panel panel-default">
+              <div class="panel-heading">개요</div>
+              <div class="panel-body">
+          <ul class="normal">
+            <li> 어느 덧 취업을 앞두고 있는 4학년. 인터넷에는 사람인, 잡코리아등 많은 구직 사이트가 존재하고 새로운 정보가 어마어마하게 있고 지금 또한 올라오고 있다. 나와 상관 없는 분야, 또는 같은 분야에서 내 관심분야 밖인 공고도 많이 볼 수 있다. 황금같은 시간을 조금이나마 줄이기 위해 나에게 적합한 공고, 내가 원하는 분야만 볼 수 있도록 이 프로젝트를 시작하게 되었다. </li>
+          </ul>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">개발과정</div>
+              <div class="panel-body">
+          <ul class="normal">
+          <li style="margin-top:10px">Web Crawling</li>
+          <img class="project4" src="assets/project4/crawler.png" width="450" height="270" alt=""  />
+          <div>파이썬의 requests api와 beautifulsoup api를 사용하여 채용 공고 웹사이트의 html가져와서 내가 필요한 부분(회사이름,공고 제목, 신입or경력등)만 남기고 남어지는 지웠다.</div>
+          <li style="margin-top:10px">Text Analysis</li>
+          <img class="project4" src="assets/project4/konlpy.png" width="450" height="400" alt=""  />
+          <div>채용공고의 url로 들어가서 그 내용들을 konply로 단어별로 나누고 word2vec api를 통해서 내가 원하는 것과 얼마나 유사한지 판단하였다.</div>
+          <li style="margin-top:10px">Selenium</li>
+          <img class="project4" src="assets/project4/selenium.png" width="450" height="400" alt=""  />
+          <div>내가 원하는 채용공고에 맞으면 앞에서 따온 회사이름을 가지고 seleinum api를 통해 그 회사의 정보를 브라우저를 통해 자동으로 가져오게 하였다.</div>
+          <li style="margin-top:10px">Alarm</li>
+          <img class="project4" src="assets/project4/fbchat.png" width="450" height="400" alt=""  />
+          <div>fbchat api를 사용하여 나에게 적합한 새로운 채용공고가 있으면 facebook 메신저를 통해 알림을 보내게 하였다.</div>
+          <li style="margin-top:10px">DB & Web Server</li>
+          <img class="project4" src="assets/project4/web_db.png" width="450" height="400" alt=""  />
+          <div>위에서 가져온 정보들을 DB에 넣고 인턴할때 공부하고 배웠던 웹기술을 이용하여 Web Server에서 불러와서 보여줄 수 있도록 만들었다.</div>
+          <li style="margin-top:10px">Web Server</li>
+          <img class="project4" src="assets/project4/web.png" width="450" height="400" alt=""  />
+          <div><br></br></div>
+          <li style="margin-top:10px">Docker & RaspberryPI</li>
+          <img class="project4" src="assets/project4/docker.png" width="450" height="400" alt=""  />
+          <div>라즈베리 안에 도커를 사용하였다. 다음과 같이 프로그램,웹서버,DB를 각각의 컨테이너로 만들고 링크를 통해 서로 연결하였다. PC와 달리 라즈베리파이는 ARM기반이라서 다른 종류의 도커 이미지 파일을 받아야 했다. 오픈 소스가 많이 없어서 라즈베리파이용 우분투 도커 이미지를 받아 프로그램을 돌릴 아나콘다와 nginx를 각각 설치하였다.</div>
+          </ul>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">사용기술</div>
+              <div class="panel-body">
+          <ul class="normal">
+            <li> Python API(requests,BeautifulSoup,Word2Vec,konlpy,selenium,pymysql,fbchat 등), MariaDB, Nginx, Docker, Raspberry PI </li>
+            <li><a href="" target="_blank"> Github(link)</a></li>
+          </ul>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div>2017.07 ~ 2017.08</div>
+    </div>
+
+  <!--end project-4 -->
+
+
 
      <div class="item">
         <span class="project-title">
@@ -227,7 +299,7 @@
             <div class="panel-body">
         <ul class="normal">
           <li> opengl </li>
-          <li><a href="https://github.com/rim0621/freeOpenGL/tree/master/FPSGAME" target="_blank">링크(link)</a></li>
+          <li><a href="https://github.com/rim0621/freeOpenGL/tree/master/FPSGAME" target="_blank">Github(link)</a></li>
         </ul>
             </div>
           </div>
@@ -293,10 +365,10 @@
         <br></br>
         <li><strong>전시회</strong></li>
 			    <img class="project1" src="assets/project1/f.jpg" width="450" height="400" alt=""  />
-			 <!--  <li>수상</li>
+			   <li><strong><수상</strong><</li>
 			   <img class="project1" src="assets/project1/f1.jpg" width="450" height="400" alt=""  />
          <div>외부 평가원들이 좋게 봐주어서 수상까지하는 퀘거를 이루었다.</div>
-			  -->
+
 			</ul>
 		      </div>
 		    </div>
@@ -374,7 +446,7 @@
                   		      <div class="panel-body">
                   			<ul class="normal">
                   			  <li> hadoop / json.jar </li>
-                          <li><a href="https://github.com/rim0621/DataMining/tree/master/HotReview" target="_blank">링크(link)</a></li>
+                          <li><a href="https://github.com/rim0621/DataMining/tree/master/HotReview" target="_blank">Github(link)</a></li>
                         </ul>
                             </div>
                           </div>
