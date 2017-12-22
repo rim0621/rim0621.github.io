@@ -20,7 +20,7 @@ categories:
 
 # 간결한 코드 작성하기
 
-<pre><code>
+```C++
 #define FOR(i,n) for(int i=0;i<(n);++i)
 bool hasDuplication(const vector<int>& array){
 	FOR(i,array.size())
@@ -29,7 +29,7 @@ bool hasDuplication(const vector<int>& array){
 				return true;
 	return false;
 }
-</code></pre>
+```
 별로지만 오타 발생을 줄여준다.
 
 # 변수 범위의 이해
