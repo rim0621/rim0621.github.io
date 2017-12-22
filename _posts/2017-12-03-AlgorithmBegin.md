@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AlgorithmBegin"
+title:  "Algorithm Beginner"
 image: ''
 date:   2016-12-03 00:06:31
 tags:
