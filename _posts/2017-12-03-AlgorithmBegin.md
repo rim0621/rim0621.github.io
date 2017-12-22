@@ -42,20 +42,19 @@ bool hasDuplication(const vector<int>& array){
 1. 현실적으로 오차를 생각하기
 2. |a-b|/max(|a|,|b|)로 a,b 상대오차를 구하기
 
-<pre><code>
+```C++
 bool relativeEqual(double a,double b){
 	return fabs(a-b) <= 1e-8 * max(fabs(a),fabs(b));
 }  // 큰 수를 비교할 때는 괜찮지만 작은 숫자들을 비교할때는 문제가 발생
-</code></pre>
-<pre><code>
+```
+```C++
 //  정대 오차와 상대오차를 모두 이용
 bool doubleEqual(double a,double b){
 	double diff=fabs(a-b);
 	if(diff '<' 1e-10) return true;
 	return diff <= 1e-8 * max(fabs(a),fabs(b));
 }
-</code></pre>
-
+```
 
 # 알고리즘 평가
 1. 시간
@@ -67,7 +66,7 @@ bool doubleEqual(double a,double b){
 1. 분석
     * 방법1 : 모든 primitive operation(assignment,array indexing, 덧셉,곱,함수호출등)횟수를 계산
     * 방법2 : 핵심적인 연산만 계산
-<pre><code>
+```C++
 void insertionSort(int a[], int n)	// 앞에정렬되있으면 자기 위치로 찾아감(앞은 정렬되있고 뒤에몇개만 소팅이 필요할때  유리)
 {
   int i, j, value;
@@ -82,7 +81,7 @@ void insertionSort(int a[], int n)	// 앞에정렬되있으면 자기 위치로 
    a[j+1] = value;
   }
 }
-</code></pre>
+```
     * Primitive operation T(n) : 4n^2+5n-8 (=, <, ++, [],-, > +, --) = O(n^2)
 	for(i=1;	1	1
 	i'<'n; i++)	2	2(n-1)
@@ -93,7 +92,7 @@ void insertionSort(int a[], int n)	// 앞에정렬되있으면 자기 위치로 
 	a[j+1]=a[j]	4	2n(n-1)
 	a[j+1]=value	3	3(n-1)
     * basic operation T(n) : 0.5n^2-0.5n = O(n^2)
-<pre></code>
+```C++
 void bubbleSort(int a[], int n)	// 인접 두개 비교
 {
    int i, j, tmp;
@@ -106,8 +105,8 @@ void bubbleSort(int a[], int n)	// 인접 두개 비교
  		a[j+1] = a[j];
 	}
 }
-</code></pre>
-<pre><code>
+```C
+```C++
 void selectionSort(int a[], int n)	//가장 작은원소를 찾은 뒤 이것을 a[i]에 넣는 것을 반복
 {
 	int i, j, min, tmp;
@@ -125,7 +124,7 @@ void selectionSort(int a[], int n)	//가장 작은원소를 찾은 뒤 이것을
 	 	}
 	}
 }
-</code></pre>
+```
 2. 선형 시간 알고리즘
     * 다이어트 현황 파악: 이동 평균 계산하기 // 모든 자료 훑어봄 (n^2) -> n 바꾸기
 3. 선형 이하 시간 알고리즘
@@ -149,7 +148,7 @@ void selectionSort(int a[], int n)	//가장 작은원소를 찾은 뒤 이것을
 
 # Maximum Contiguous Subsequence Sum
 - n개의 정수 a1~an이 주어졌을 때, 연속적인 부분수열의 합이 최대가 되는 구간과 그 구간의 합을 계산하시오.
-<pre><code>
+```C++
 // 5 -7 2 3 -4 5 2 -7 8 -7
 int maxSubsequenceSum(int a[], int n, int *start, int *end)
 {
@@ -176,8 +175,8 @@ int maxSubsequenceSum(int a[], int n, int *start, int *end)
 	return maxSum;
 }
 /* O(n^3)*/
-</code></pre>
-<pre><code>
+```
+```C++
 // 5 -7 2 3 -4 5 2 -7 8 -7
 int maxSubsequenceSum(int a[], int n, int *start, int *end)
 {
@@ -203,8 +202,8 @@ int maxSubsequenceSum(int a[], int n, int *start, int *end)
 	return maxSum;
 }
 /* O(n^2)*/
-</code></pre>
-<pre><code>
+```
+```C++
 // 5 -7 2 3 -4 5 2 -7 8 -7
 // 음수가 되는 곳 다음을 처음으로 잡고!!!!!
 int maxSubsequenceSum(int a[], int n, int *start, int *end)
@@ -231,4 +230,4 @@ int maxSubsequenceSum(int a[], int n, int *start, int *end)
 	return maxSum;
 }
 /* O(n)*/
-</code></pre>
+```
