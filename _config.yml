@@ -43,9 +43,6 @@ links:
 projects:
   - name: Job-Notification
     url: https://github.com/rim0621/JobProject
-  - name: vim-frontend
-    url: https://github.com/victorvoid/vim-frontend
-  - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
