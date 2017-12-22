@@ -38,6 +38,7 @@ bool hasDuplication(const vector<int>& array){
 2. 오버플로 피하기
     * 큰 자료형 사용
     * 연산 순서 바꾸기 ex) 이항계수 (n,r) = n!/(n-r)!r! => (n-1,r-1) + (n-1,r)
+		
 # 실수 크기 비교
 1. 현실적으로 오차를 생각하기
 2. |a-b|/max(|a|,|b|)로 a,b 상대오차를 구하기
