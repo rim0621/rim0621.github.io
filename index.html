@@ -561,3 +561,83 @@
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
+
+<!--
+
+       <div class="item">
+          <span class="project-title">
+        <a class="anchor" data-toggle="modal" data-target="#projectModal4" style="cursor:pointer"><strong>Jobs</strong></a>
+      </span> - <span class="project-tagline">파이썬 API를 이용한 웹 크롤링 & 셀리늄</span>
+          <div id="projectModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">
+                    <span class="glyphicon glyphicon-level-up">&nbsp;Jobs</span>
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <h1>오목고</h1>
+            <h2>개요</h2>
+            <blockquote>
+            <p>2016년 화두였던 알파고와 이세돌의 대국으로 인공지능이 일반인에게도 친숙하게 다가왔다. 오목고는 알파고에서 영감을받아 (주)헨즈온 테크놀러지와 시작하게 되어있는데 기존의 바둑은 복잡 한 룰을 가지고 있는데 반해 오목고는 남녀노소, 아이들 까지 친숙한 오목을 인공지능과 접목시킴으로서 사람들에게 호기심과 흥미를 유발하게 만들었다. 뿐만하니라 알파고는 기계가 직접 두지 않는 반면에 오목고는 융합시대에 맞추어 Hardware와 Software를 융합하여 기존 오목들과 다르게, 누구나 어렸을때 가지고 놀았을 LEGO를 가지고 만든 기계가 직접 인간과 오목을 두게 만들었다.</p>
+            </blockquote>
+            <h2>시스템구조 및 개발과정</h2>
+            <h3>시스템구조</h3>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/omok.png"></p>
+            <h3>로봇(하드웨어)</h3>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/hardware.png"></p>
+            <blockquote>
+            <p>15X15정도 크기의 바둑판을 사용하였다. 바둑돌을 집기위하여 주사기 끝에 고무를 달고 그 고무 중앙에 바늘구멍을 뚫음으로써 바둑돌에 닿으면 피스톤을 끌어올려 바둑돌과 주사기 안을 진공상태로 만들어 들어 올린다. 그리고 EV3를 가지고 컴퓨터와 TCP/IP 통신을 통하여 컴퓨터에서 좌표 값을 받아와 바둑돌을 그 좌표 값에 놓는다. 하드웨어를 구동하기 위해 EV3 파이썬 라이브러리를 사용하였다.</p>
+            </blockquote>
+            <h3>영상처리(opencv)</h3>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/opencv1.jpg"></p>
+            <blockquote>
+            <p>카메라 웹캠을 사용하여, 바둑판 위에 고정시키고 바둑돌 좌표를 인식한다. opencv라이브러리를 이용하여 실시간으로 영상을 받아오며 사람이 두는 동그란 바둑돌을 허프서클함수를 이용하여 인식하게 하였다.</p>
+            </blockquote>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/opencv2.png"></p>
+            <blockquote>
+            <p>첫번째 사진과 같이 여러 원을 한번에 인식하면 인식률이 떨어져서 위 그림과 같이 차영상을 통하여 새로 들어온 바둑돌만을 인식하게 하였다.</p>
+            </blockquote>
+            <h3>알고리즘</h3>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/algorithm.png"></p>
+            <blockquote>
+            <p>가중치 알고리즘은 돌의 개수에 따라서 가중치를 할당한다.예를 들어 가로로 돌이 2개이면 양옆은 가중치를 2를 준다는 식으로 평가하였다.</p>
+            </blockquote>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/algorithm2.png"></p>
+            <blockquote>
+            <p>민맥스 알고리즘은 앞서 사용한 가중치를 가지고 한수 두수 앞을 보고 어디에 두면 좋을지를 계산하는 알고리즘이다.</p>
+            </blockquote>
+            <h3>최종시연 (클릭)</h3>
+            <p><a href="https://youtu.be/rCY1A1EaqUE"><img alt="Alt text" src="http://img.youtube.com/vi/rCY1A1EaqUE/0.jpg"></a></p>
+            <h3>기타</h3>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/f.jpg"></p>
+            <p><img alt="Alt text" src="https://rim0621.github.io/assets/project1/f1.jpg"></p>
+            <h2>역활</h2>
+            <ul>
+            <li><p>초반에는 방학이라서 시간이 많이 남아서 공부 할겸 영상인식(opencv)를 공부하였다. opencv에서는 위의 그림과 같이 영상받기,바둑돌인식,차영상들을 구현하였다.</p>
+            </li>
+            <li><p>유튜브와 오픈 소스를 통해 공부하여 게임 알고리즘에서는 승/패를 판정하는 알고리즘을 구현하였다. 최적의 위치를 찾는 컴퓨터와 바둑돌을 실제로 놓는 EV3와 통신을 하기위해 TCP/IP통신을 구현하였다.</p>
+            </li>
+            <li><p>기타, 수행계획서등 보고서 일부분을 작성하였다.</p>
+            </li>
+            </ul>
+            <h2>사용기술</h2>
+            <ul>
+            <li>영상처리(openCV) / C++-&gt;Java / Python / TCP/IP통신 / 승패 알고리즘 / 가중치 알고리즘 / MinMax 알고르즘 / 레고 / EV3</li>
+            </ul>
+            <h2><a href="http://capstone.cs.kookmin.ac.kr/timbyeol-jinhaeng-hyeonhwang-1dangye-1/17jo-timmyeong">링크</a></h2>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div>2017.07 ~ 2017.08</div>
+    </div>
+
+
+-->
