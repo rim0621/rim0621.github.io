@@ -42,10 +42,7 @@ a:focus {
 p {
   line-height: 1.5;
 }
-img {
-  max-width: 100%;
-  height: auto;
-}
+
 .wrapper {
   background: #4CAC9D;
   max-width: 960px;
