@@ -298,13 +298,13 @@ img{
     <h3>하드웨어 조립</h3>
     <ul>
     <li><p>조립</p>
-    <p><img height="300" width="300" src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/making.jpg?raw=true"></p>
+    <p><img width="300" height=auto src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/making.jpg?raw=true"></p>
     </li>
     <li><p>측면</p>
-    <p><img height="300" width="300" src="https://raw.githubusercontent.com/rim0621/RobotSW/master/autonomousVehicle/img/left.jpg"></p>
+    <p><img width="300" height=auto src="https://raw.githubusercontent.com/rim0621/RobotSW/master/autonomousVehicle/img/left.jpg"></p>
     </li>
     <li><p>앞</p>
-    <p><img height="300" width="300" src="https://raw.githubusercontent.com/rim0621/RobotSW/master/autonomousVehicle/img/front.jpg"></p>
+    <p><img width="300" height=auto src="https://raw.githubusercontent.com/rim0621/RobotSW/master/autonomousVehicle/img/front.jpg"></p>
     </li>
     </ul>
     <blockquote>
@@ -312,12 +312,12 @@ img{
     </blockquote>
     <h3>PID제어</h3>
     <pre class="editor-colors lang-c"><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;ki</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--c"><span>,</span></span><span>kp</span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--c"><span>,</span></span><span>kd</span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>int</span></span><span>&nbsp;speed</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--c"><span>,</span></span><span>pre_speed</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--c"><span>,</span></span><span>cnt</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;err</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;i</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;d</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--separator syntax--delimiter syntax--c"><span>,</span></span><span>p</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;lsterr</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--constant syntax--numeric syntax--c"><span>0</span></span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span class="syntax--storage syntax--type syntax--c"><span>float</span></span><span>&nbsp;pivot</span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--source syntax--c"><span>p</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span>kp</span><span class="syntax--keyword syntax--operator syntax--c"><span>*</span></span><span>err</span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span>i</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span>i</span><span class="syntax--keyword syntax--operator syntax--c"><span>+</span></span><span>ki</span><span class="syntax--keyword syntax--operator syntax--c"><span>*</span></span><span>err</span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div><div class="line"><span class="syntax--source syntax--c"><span>d</span><span class="syntax--keyword syntax--operator syntax--assignment syntax--c"><span>=</span></span><span class="syntax--punctuation syntax--section syntax--parens syntax--begin syntax--bracket syntax--round syntax--c"><span>(</span></span><span>err</span><span class="syntax--keyword syntax--operator syntax--c"><span>-</span></span><span>lsterr</span><span class="syntax--punctuation syntax--section syntax--parens syntax--end syntax--bracket syntax--round syntax--c"><span>)</span></span><span>&nbsp;</span><span class="syntax--keyword syntax--operator syntax--c"><span>*</span></span><span>&nbsp;kd</span><span class="syntax--punctuation syntax--terminator syntax--statement syntax--c"><span>;</span></span></span></div></pre>
-    <p><img height="300" width="300" src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/PID1.png?raw=true"></p>
+    <p><img width="300" height=auto src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/PID1.png?raw=true"></p>
     <blockquote>
     <p>PID제어 데이터를 뽑은 결과 다음과 같이 나왔다.</p>
     <p>초흠파거리센서가 0.001초 마다 가져와서 제대로된 제어가 안되는 거라고 판단해서 0.1초마다 가져오기위해 메인에 슬립을 주었다.</p>
     </blockquote>
-    <p><img height="300" width="300" src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/PID2.png?raw=true"></p>
+    <p><img width="300" height=auto src="https://github.com/rim0621/RobotSW/blob/master/autonomousVehicle/img/PID2.png?raw=true"></p>
     <blockquote>
     <p>그 결과 제어가 좀더 가능해 졌다.</p>
     <p>처음에는 제어를 잘했지만 뒤쪽에는 직선 구간이 부딪히는 상황이 생겨서 값이 뛰어 제어가 잘 안되는 것을 볼 수 있다.</p>
@@ -402,27 +402,27 @@ img{
               <div class="panel-body">
           <ul class="normal">
           <li style="margin-top:10px">architecture</li>
-          <img class="project4" src="assets/project4/structure.png" width="450" height="270" alt=""  />
+          <img class="project4" src="assets/project4/structure.png" width="400" height=auto alt=""  />
           <li style="margin-top:10px">Web Crawling</li>
-          <img class="project4" src="assets/project4/crawler.png" width="450" height="270" alt=""  />
+          <img class="project4" src="assets/project4/crawler.png" width="400" height=auto alt=""  />
           <div>파이썬의 requests api와 beautifulsoup api를 사용하여 채용 공고 웹사이트의 html가져와서 내가 필요한 부분(회사이름,공고 제목, 신입or경력등)만 남기고 남어지는 지웠다.</div>
           <li style="margin-top:10px">Text Analysis</li>
-          <img class="project4" src="assets/project4/konlpy.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/konlpy.png" width="400" height=auto alt=""  />
           <div>채용공고의 url로 들어가서 그 내용들을 konply로 단어별로 나누고 word2vec api를 통해서 내가 원하는 것과 얼마나 유사한지 판단하였다.</div>
           <li style="margin-top:10px">Selenium</li>
-          <img class="project4" src="assets/project4/selenium.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/selenium.png" width="400" height=auto alt=""  />
           <div>내가 원하는 채용공고에 맞으면 앞에서 따온 회사이름을 가지고 seleinum api를 통해 그 회사의 정보를 브라우저를 통해 자동으로 가져오게 하였다.</div>
           <li style="margin-top:10px">Alarm</li>
-          <img class="project4" src="assets/project4/fbchat.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/fbchat.png" width="400" height=auto alt=""  />
           <div>fbchat api를 사용하여 나에게 적합한 새로운 채용공고가 있으면 facebook 메신저를 통해 알림을 보내게 하였다.</div>
           <li style="margin-top:10px">DB & Web Server</li>
-          <img class="project4" src="assets/project4/web_db.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/web_db.png" width="400" height=auto alt=""  />
           <div>위에서 가져온 정보들을 DB에 넣고 인턴할때 공부하고 배웠던 웹기술을 이용하여 Web Server에서 불러와서 보여줄 수 있도록 만들었다.</div>
           <li style="margin-top:10px">Web Server</li>
-          <img class="project4" src="assets/project4/web.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/web.png" width="400" height=auto alt=""  />
           <div><br></br></div>
           <li style="margin-top:10px">Docker & RaspberryPI</li>
-          <img class="project4" src="assets/project4/docker.png" width="450" height="400" alt=""  />
+          <img class="project4" src="assets/project4/docker.png" width="400" height=auto alt=""  />
           <div>라즈베리 안에 도커를 사용하였다. 다음과 같이 프로그램,웹서버,DB를 각각의 컨테이너로 만들고 링크를 통해 서로 연결하였다. PC와 달리 라즈베리파이는 ARM기반이라서 다른 종류의 도커 이미지 파일을 받아야 했다. 오픈 소스가 많이 없어서 라즈베리파이용 우분투 도커 이미지를 받아 프로그램을 돌릴 아나콘다와 nginx를 각각 설치하였다.</div>
           </ul>
               </div>
@@ -475,20 +475,20 @@ img{
             <div class="panel-body">
         <ul class="normal">
         <li style="margin-top:10px">Shader</li>
-        <img class="project3" src="assets/project3/shader.png" width="450" height="270" alt=""  />
+        <img class="project3" src="assets/project3/shader.png" width="400" height=auto alt=""  />
         <li style="margin-top:10px">Objects</li>
-        <img class="project3" src="assets/project3/object.png" width="450" height="400" alt=""  />
+        <img class="project3" src="assets/project3/object.png" width="400" height=auto alt=""  />
         <div> 인터넷에서 쉽게 구할 수 있는 오픈소스들을 사용하였다.</div>
         <li style="margin-top:10px">Camera</li>
         <div>keyboard에 키값을 받아서 3차원상에 앞뒤양옆으로 자유롭게 움직일수 있고 마우스를 통해 주위를 둘러 볼수 있도록 구현하였다.</div>
         <li style="margin-top:10px">Phong</li>
-        <img class="project3" src="assets/project3/phong.png" width="450" height="400" alt=""  />
+        <img class="project3" src="assets/project3/phong.png" width="400" height=auto alt=""  />
         <div>phong reflection을 사용하여 단색이 아니라 좀더 실제처럼 빛을 구현하였다.</div>
         <li style="margin-top:10px">Texture mapping</li>
-        <img class="project3" src="assets/project3/texture.png" width="450" height="400" alt=""  />
+        <img class="project3" src="assets/project3/texture.png" width="400" height=auto alt=""  />
         <div>texture mapping을 해보았지만 안 이뻐서 삭제하고 그냥 배운 내용을 토대로 구현만 하였다.</div>
         <li style="margin-top:10px">Complete</li>
-        <img class="project3" src="assets/project3/lst.png" width="450" height="400" alt=""  />
+        <img class="project3" src="assets/project3/lst.png" width="400" height=auto alt=""  />
         </ul>
             </div>
           </div>
@@ -540,32 +540,32 @@ img{
 		      <div class="panel-body">
 			<ul class="normal">
 			  <li><strong>시스템구조</strong></li>
-			  <img class="project1" src="assets/project1/omok.png" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/omok.png" width="400" height=auto alt=""  />
         <br></br>
 			  <li><strong>하드웨어</strong></li>
-			  <img class="project1" src="assets/project1/hardware.png" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/hardware.png" width="480" height=auto alt=""  />
 			  <div>15X15정도 크기의 바둑판을 사용하였다. 바둑돌을 집기위하여 주사기 끝에 고무를 달고 그 고무 중앙에 바늘구멍을 뚫음으로써 바둑돌에 닿으면 피스톤을 끌어올려 바둑돌과 주사기 안을 진공상태로 만들어 들어 올린다. 그리고 EV3를 가지고 컴퓨터와 TCP/IP 통신을 통하여 컴퓨터에서 좌표 값을 받아와 바둑돌을 그 좌표 값에 놓는다. 하드웨어를 구동하기 위해 EV3 파이썬 라이브러리를 사용하였다.</div>
         <br></br>
         <li><strong>영상처리</strong></li>
-			  <img class="project1" src="assets/project1/opencv1.jpg" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/opencv1.jpg" width="300" height=auto alt=""  />
 			  <div>카메라 웹캠을 사용하여, 바둑판 위에 고정시키고 바둑돌 좌표를 인식한다. opencv라이브러리를 이용하여 실시간으로 영상을 받아오며 사람이 두는 동그란 바둑돌을 허프서클함수를 이용하여 인식하게 하였다.</div>
-			  <img class="project1" src="assets/project1/opencv2.png" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/opencv2.png" width="400" height=auto alt=""  />
 			  <div>첫번째 사진과 같이 여러 원을 한번에 인식하면 인식률이 떨어져서 위 그림과 같이 차영상을 통하여 새로 들어온 바둑돌만을 인식하게 하였다.</div>
         <br></br>
         <li><strong>알고리즘</strong></li>
-			  <img class="project1" src="assets/project1/algorithm.png" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/algorithm.png" width="400" height=auto alt=""  />
 			  <div>가중치 알고리즘은 돌의 개수에 따라서 가중치를 할당한다.예를 들어 가로로 돌이 2개이면 양옆은 가중치를 2를 준다는 식으로 평가하였다.</div>
-			  <img class="project1" src="assets/project1/algorithm2.png" width="450" height="400" alt=""  />
+			  <img class="project1" src="assets/project1/algorithm2.png" width="400" height=auto alt=""  />
 			  <div>민맥스 알고리즘은 앞서 사용한 가중치를 가지고 한수 두수 앞을 보고 어디에 두면 좋을지를 계산하는 알고리즘이다.</div>
         <br></br>
         <li><strong>최종시연</strong></li>
-			  <video class="project1" src="assets/project1/final.mp4" width="450" height="400" controls="controls" ></video>
+			  <video class="project1" src="assets/project1/final.mp4" width="400" height=auto controls="controls" ></video>
         <br></br>
         <li><strong>전시회</strong></li>
-			    <img class="project1" src="assets/project1/f.jpg" width="450" height="400" alt=""  />
-			   <li><strong><수상</strong><</li>
-			   <img class="project1" src="assets/project1/f1.jpg" width="450" height="400" alt=""  />
-         <div>외부 평가원들이 좋게 봐주어서 수상까지하는 퀘거를 이루었다.</div>
+			    <img class="project1" src="assets/project1/f.jpg" width="400" height=auto alt=""  />
+			   <li><strong><수상</strong>></li>
+			   <img class="project1" src="assets/project1/f1.jpg" width="400" height=auto alt=""  />
+         <div>외부 평가원들이 좋게 봐주어서 수상까지하는 쾌거를 이루었다.</div>
 
 			</ul>
 		      </div>
@@ -628,12 +628,12 @@ img{
                   		      <div class="panel-body">
                   			<ul class="normal">
                         <li>MAP</li>
-                        <img class="project2" src="assets/project2/map.png" width="450" height="400" alt=""  />
+                        <img class="project2" src="assets/project2/map.png" width="400" height=auto alt=""  />
                         <div> 아마존 리뷰 텍스트 파일을 json파일로 불러들여서 상품번호(asin),리뷰(reviewText) 그리고 사용자들의 평가 횟루를 나타내는 helpful의 분모를 추출한다.
                           helpful의 분자는 긍정적인 리뷰평을 한 구매자의 수를 나타내고, 분모는 리뷰평에 참여한 구매자의 수를 나타낸다.
                           Map의 context.write에서 key값은 “asin”을 사용하고 value값은 “helpful”의 분모와 “reviewText”를 세미콜론(;)을 경계로 합친 Text형식으로 Reduce로 보낸다. </div>
                         <li>REDUCE</li>
-                        <img class="project2" src="assets/project2/reduce.png" width="450" height="400" alt=""  />
+                        <img class="project2" src="assets/project2/reduce.png" width="400" height=auto alt=""  />
                         <div>Map으로부터 key(“asin”)와 value(“helpful” + “reviewText”)를 받는다. 이때 value를 “helpful”과 “reviewText”를 세미콜론(;)을 경계로 split을 사용하여 구분한다. Text형식인 “helpful”을 Integer형으로 변환하여 같은 key(“asin”)중에 최대값을 추출하고 그 key(“asin”)의 대한 “reviewText”를 출력한다.</div>
 
                         </ul>
